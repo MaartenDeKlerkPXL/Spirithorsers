@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onze Filosofie | Spirithorses</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .filosofie-hero {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('filosofie-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+        }
+
+        .center-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* De aanpassing voor de breedte */
+        .philosophy-grid {
+            display: flex;
+            justify-content: space-between; /* Verdeelt de kaartjes over de volledige breedte */
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+            width: 100%; /* Dwingt de grid om de volle breedte van de sectie te pakken */
+        }
+
+        .phil-item {
+            flex: 1 1 300px; /* Zorgt dat ze groeien en minimaal 300px breed zijn */
+            padding: 40px 20px;
+            background: #fcfaf5;
+            border: 1px solid var(--accent-color);
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+
+        .extra-space-bottom {
+            margin-bottom: 60px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; color: inherit;">Spirithorses</a>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="active">Natuurlijk Paardenhouden ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="pension.html">Paardenpension</a></li>
+                    <li><a href="bekappen.html">Bekappen aan Huis</a></li>
+                    <li><a href="filosofie.html" class="active">Onze Filosofie</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Training & Locatie ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="locatie.html">Locatieverhuur</a></li>
+                    <li><a href="western.html">Western Horsemanship</a></li>
+                    <li><a href="vlieland.html">Tent op Vlieland</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Over Ons ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="wij.html">Wie zijn wij?</a></li>
+                    <li><a href="tarieven.html">Tarievenlijst</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+<section class="hero filosofie-hero">
+    <div class="hero-content">
+        <h1>Onze Filosofie</h1>
+        <p>De kernwaarden die ons werk met de kudde definiëren.</p>
+    </div>
+</section>
+
+<div class="content-section" style="margin-top: 60px; max-width: 1100px; margin-left: auto; margin-right: auto;">
+
+    <div class="center-content">
+        <h2>Bitloos, Ijzerloos, Zweeploos</h2>
+        <p>Bij Spirithorses draait alles om partnerschap en respect. Deze drie pijlers vormen de basis voor een gelukkig en gezond paard dat in zijn eigen kracht staat.</p>
+    </div>
+
+    <div class="philosophy-grid">
+        <div class="phil-item">
+            <h3>Bitloos</h3>
+            <p>Communicatie op basis van verfijnde hulpen en wederzijds vertrouwen, zonder fysieke dwang van een bit.</p>
+        </div>
+        <div class="phil-item">
+            <h3>Ijzerloos</h3>
+            <p>Natuurlijk bekappen ondersteunt het hoefmechanisme en zorgt voor een optimale doorbloeding en schokdemping.</p>
+        </div>
+        <div class="phil-item">
+            <h3>Zweeploos</h3>
+            <p>We trainen door middel van motivatie en helder leiderschap, waarbij de zweep nooit als strafmiddel wordt ingezet.</p>
+        </div>
+    </div>
+
+    <br><br><hr style="border: 0; border-top: 1px solid var(--accent-color); width: 50%; margin: 0 auto;"><br><br>
+
+    <div class="center-content">
+        <h3>Natuurlijk evenwicht</h3>
+        <p>Onze aanpak is niet alleen een methode, maar een levenswijze. Door te luisteren naar de behoeften van het paard creëren we een omgeving waarin ze zowel fysiek als mentaal kunnen floreren.</p>
+        <br>
+        <a href="contact.html" class="btn">Stel een vraag</a>
+        <br><br>
+        <a href="locatie.html" class="extra-space-bottom" style="color: var(--text-color); text-decoration: underline;">Bekijk ons cursusaanbod</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Spirithorses.be | Natuurlijk in balans</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
