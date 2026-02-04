@@ -95,10 +95,21 @@
         <h3>Stuur ons een bericht</h3>
         <p>Gebruik onderstaand formulier voor uw vragen. Wij proberen u zo snel mogelijk te antwoorden.</p>
 
-        <form style="display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 40px auto; text-align: left;">
-            <input type="text" placeholder="Naam" style="padding: 12px; border: 1px solid var(--accent-color); background: #fcfaf5;" required>
-            <input type="email" placeholder="E-mailadres" style="padding: 12px; border: 1px solid var(--accent-color); background: #fcfaf5;" required>
-            <textarea placeholder="Uw bericht of vraag" rows="6" style="padding: 12px; border: 1px solid var(--accent-color); background: #fcfaf5; font-family: inherit;" required></textarea>
+        <form action="https://formspree.io/f/jouw_unieke_code" method="POST" style="display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 40px auto; text-align: left;">
+            <label for="naam"></label>
+            <input type="text" id="naam" name="naam" placeholder="Uw Naam" style="padding: 12px; border: 1px solid var(--accent-color); background: #fcfaf5;" required>
+
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Uw e-mailadres" style="padding: 12px; border: 1px solid var(--accent-color); background: #fcfaf5;" required>
+
+            <label for="onderwerp"></label>
+            <input type="text" id="onderwerp" name="onderwerp" placeholder="Onderwerp" style="padding: 12px; border: 1px solid var(--accent-color); background: #fcfaf5;" required>
+
+            <label for="bericht"></label>
+            <textarea id="bericht" name="bericht" placeholder="Uw bericht of vraag" rows="6" style="padding: 12px; border: 1px solid var(--accent-color); background: #fcfaf5; font-family: inherit;" required></textarea>
+
+            <input type="hidden" name="_subject" value="Nieuw bericht via Spirithorses.be">
+
             <button type="submit" class="btn" style="align-self: center; cursor: pointer;">Verstuur Bericht</button>
         </form>
 
