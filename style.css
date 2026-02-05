@@ -374,12 +374,26 @@ header {
     border-collapse: collapse;
     margin-top: 20px;
 }
+.content-section, .footer-content, .navbar-content {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
 
 /* Container voor horizontaal scrollen van tabellen op kleine schermen */
 .table-wrapper {
     overflow-x: auto;
     width: 100%;
     margin-bottom: 20px;
+}
+.nav-links i {
+    transition: transform 0.3s ease;
+}
+
+.nav-links i:hover {
+    transform: scale(1.2);
+    color: #4267B2; /* Facebook blauw bij hover */
 }
 
 /* Knoppen */
@@ -435,6 +449,83 @@ header {
         box-shadow: none;
         padding-left: 20px;
         background: transparent;
+    }
+}
+
+/* Uitgebreide Footer Styling */
+.main-footer {
+    background-color: #e8e4d8; /* De bestaande footer kleur */
+    padding: 60px 20px 20px;
+    margin-top: 40px;
+    border-top: 2px solid var(--accent-color);
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 20px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a, .fb-footer {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .fb-footer:hover {
+    color: #8b7d6b; /* Accent kleur uit je nav */
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--accent-color);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-bottom a {
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Mobiele aanpassing voor de footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section h4 {
+        display: block;
     }
 }
 
