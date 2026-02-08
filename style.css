@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: georgia, serif;
+    font-family: futura, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
@@ -271,7 +271,7 @@ footer {
 }
 
 body {
-    font-family: georgia, serif;
+    font-family: futura, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
